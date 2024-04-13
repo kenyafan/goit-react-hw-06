@@ -1,13 +1,13 @@
 import s from "./SearchBox.module.css";
 
-const SearchBox = ({ searchStr, onChangeSearch }) => {
+const SearchBox = ({ value, onChange }) => {
   return (
     <label className={s.label}>
       Find contacts by name
       <input
         className={s.input}
-        value={searchStr}
-        onChange={(e) => onChangeSearch(e.target.value)}
+        value={value}
+        onChange={onChange}
         type="text"
         placeholder="Enter search name"
         name="search"
