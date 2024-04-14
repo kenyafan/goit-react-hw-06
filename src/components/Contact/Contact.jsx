@@ -9,8 +9,6 @@ const ContactItem = ({ contact }) => {
 
   const { id, name, number } = contact;
 
-  console.log(contact.name);
-
   return (
     <>
       <div>
